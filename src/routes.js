@@ -1,11 +1,11 @@
 const express = require('express');
-const router = express.Router();
+const routes = express.Router();
 
-router.get('/', (req, res) => {
+routes.get('/', (req, res) => {
 	res.json({ ok: true });
 });
 
-router.get('/users', (req, res) => {
+routes.get('/users', (req, res) => {
 	res.json({
 		id: 1,
 		username: 'Beaast_exe',
@@ -14,4 +14,4 @@ router.get('/users', (req, res) => {
 	});
 });
 
-module.exports = router;
+module.exports = routes;
