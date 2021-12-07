@@ -1,0 +1,10 @@
+module.exports = {
+	dialect: 'mysql',
+	host: 'localhost',
+	username: 'USERNAME',
+	password: 'PASSWORD',
+	database: 'DATABASE',
+	define: {
+		timestamps: true // created_at, updated_at
+	}
+};
