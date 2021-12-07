@@ -1,17 +1,13 @@
 const express = require('express');
 const routes = express.Router();
 
+const UserController = require('./controllers/UserController');
+
 routes.get('/', (req, res) => {
 	res.json({ ok: true });
 });
 
-routes.get('/users', (req, res) => {
-	res.json({
-		id: 1,
-		username: 'Beaast_exe',
-		password: 'teste123',
-		email: 'beaastcontacto@gmail.com'
-	});
-});
+routes.get('/users', UserController.index);
+routes.post('/users', UserController.store);
 
 module.exports = routes;
