@@ -5,6 +5,7 @@ module.exports = {
 	password: 'PASSWORD',
 	database: 'DATABASE',
 	define: {
-		timestamps: true // created_at, updated_at
+		timestamps: true, // created_at, updated_at
+		underscored: true
 	}
 };
