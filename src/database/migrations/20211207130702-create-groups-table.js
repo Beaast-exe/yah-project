@@ -2,7 +2,7 @@
 
 module.exports = {
 
-	up: async (queryInterface, Sequelize) => {
+	up: (queryInterface, Sequelize) => {
 		await queryInterface.createTable('groups', {
 			group_id: {
 				type: Sequelize.INTEGER,
