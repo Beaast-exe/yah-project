@@ -3,7 +3,7 @@
 module.exports = {
 
 	up: (queryInterface, Sequelize) => {
-		await queryInterface.createTable('groups', {
+		return queryInterface.createTable('groups', {
 			group_id: {
 				type: Sequelize.INTEGER,
 				primaryKey: true,
